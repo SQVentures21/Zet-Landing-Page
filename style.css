@@ -1,0 +1,352 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+    background-color: black;
+}
+
+a 
+{
+    text-decoration: none;
+}
+/* 
+utility class */
+.container
+{
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 0px !important;
+  display: flex;
+
+}
+
+
+
+.flex 
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    align-content:center;
+  }
+
+
+/* 
+background animation */
+  
+.zoom-in-zoom-out {
+background-image: url("assets/zetcasino_games_2x_desktop.webp");
+width:50vw;
+height:100vh;
+animation:zoom-in-zoom-out 20s ease-out infinite;
+
+}
+
+@keyframes zoom-in-zoom-out {
+0% {
+  transform: scale(1, 1);
+}
+50% {
+  transform: scale(1.1,1.1);
+}
+100% {
+  transform: scale(1, 1);
+}
+}
+
+
+
+/* text-slider animation */
+
+
+.animated-text
+{
+    background-color: black;
+}
+
+    .first
+    {
+        position: relative;
+        display: inline-block;
+    }
+
+    .first > .animated-text
+    {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        top: 5%; /* Adjust this value to move the positioned div up and down */
+        background: rgba(0, 0, 0, 0.8);
+        font-family: Arial,sans-serif;
+        color: #fff;
+        width: 80%; /* Set the width of the positioned div */
+    }
+
+ .first > .animated-text-2
+ {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;        
+    text-align: center;
+    top: 90%; /* Adjust this value to move the positioned div up and down */
+    background: rgba(0, 0, 0, 0.8);
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 80%; /* Set the width of the positioned div */
+ }
+
+
+ .rssBlock{
+    left:0px;
+    height: 64px;
+    background: #000000;
+    position: absolute;
+    width:95%;
+    overflow: hidden;
+  }
+  
+  /*remove p*/
+  .cnnContents {
+    width:100%;
+    padding-top: 15px;
+    margin:0 auto;
+    white-space: nowrap;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+   line-height: 36px;
+
+  }
+  
+  .marqueeStyle {
+    display:inline-block;
+    /* Apply animation to this element */
+    -webkit-animation: scrolling-left1 20s linear infinite;
+    animation: scrolling-left1 20s linear infinite;
+  }
+  
+  .marqueeStyle2 {
+    display:inline-block;
+    /* Apply animation to this element */
+    -webkit-animation: scrolling-left2 20s linear infinite;
+    animation: scrolling-left2 20s linear infinite;
+    animation-delay: 10s;
+  }
+  /* scrolling-left is continuous/repeatly text */
+  @keyframes scrolling-left1 {
+      0% {transform: translateX(100%);
+          -webkit-transform: translateX(100%);}
+        100% {transform: translateX(-100%);
+            -webkit-transform: translateX(-100%);}
+  }
+  @keyframes scrolling-left2 {
+      0% {transform: translateX(0%);
+          -webkit-transform: translateX(0%);}
+        100% {transform: translateX(-200%);
+            -webkit-transform: translateX(-200%);}
+  }
+  
+  @-webkit-keyframes scrolling-left1 {
+      0% {-webkit-transform: translateX(100%);}
+        100% {-webkit-transform: translateX(-100%);}
+  }
+  @-webkit-keyframes scrolling-left2 {
+      0% {-webkit-transform: translateX(0%);}
+        100% {-webkit-transform: translateX(-200%);}
+  }
+  
+
+  .zoom-in-zoom-out::after
+  {
+    background: linear-gradient(180deg, #e60000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(90deg);
+    z-index: 9999;
+  }
+
+  .second
+  {
+      background-color: black;
+      width:50vw;
+      z-index:9999;
+      height:100vh;
+
+
+  }
+
+  .logo
+  {
+    height: 128px;
+    width: 177px;
+  }
+
+  .main-text
+  {
+    margin:40px 0 40px 0;
+    
+  }
+  
+  .main-text-h1
+  {
+    font-family:Roboto;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FED22A;
+
+    
+  }
+
+  .offer-p
+  {
+        font-family: Roboto;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+       color:#686B6C;
+   
+
+  
+  }
+
+  .offer {
+
+    margin-bottom:20px;
+  }
+  
+
+  .count-down
+  {
+      color:white;
+      margin-bottom:40px;
+  }
+  
+  
+  .count
+  {
+      display: flex;
+      text-align: center;
+      justify-content: space-around;
+     
+  }
+
+  .container-2
+  {
+      width:500px;
+      margin-inline:auto;
+  }
+
+
+  .day , .hour , .minute , .seconds
+{
+
+font-family: Roboto;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+
+
+.day-text
+{
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: center;
+color:#686B6C;
+}
+
+
+.steps
+{
+    display: flex;
+    justify-content: center;
+}
+.step1 , .step2 , .step3
+{
+    display: flex;
+    padding-right:30px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+ 
+
+}
+
+.step1 , .step2 , .step3 > p
+{
+  
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:white;
+    
+    
+}
+
+.step1 , .step2 , .step3 > img
+
+{
+    margin-left:20px;
+}
+
+.step-p
+{
+    margin-left:20px;
+}
+
+
+.main-button
+{
+   margin-top: 40px; 
+}
+.button-r
+{
+height: 54px;
+width: 170px;
+border-radius: 8px;
+padding: 16px 32px 16px 32px;
+background-color:#F7CD28;
+text-align: center
+;
+
+}
+
+.payments
+{
+height: 64px;
+width: 717px;
+margin-top:50px;
+margin-inline:auto;
+}
+
+

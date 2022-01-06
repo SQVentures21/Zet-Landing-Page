@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="container ">
+
+
+    <section class="first">
+<img class="zoom-in-zoom-out" src="assets/zetcasino_games_2x_desktop.webp" alt="">
+   
+      <div class="animated-text">
+        <div class='rssBlock'>
+          <p class="cnnContents">
+            <span class="marqueeStyle">&nbsp;The experience taking over the world! </span>
+        <!-- duplicate above, change style to allow continous scroll -->
+               <span class="marqueeStyle2">&nbsp;The experience taking over the world!&nbsp;</span>
+             </p>
+        </div>
+      </div>
+
+      <div class="animated-text-2">
+        <div class='rssBlock'>
+          <p class="cnnContents">
+            <span class="marqueeStyle">&nbsp;The experience taking over the world! </span>
+        <!-- duplicate above, change style to allow continous scroll -->
+               <span class="marqueeStyle2">&nbsp;The experience taking over the world!&nbsp;</span>
+             </p>
+        </div>
+      </div>
+    </section>
+
+     <section class="second">
+
+   
+
+                <div class="partners">
+                    <img src="" alt="">
+                    <img src="" alt="">      
+                </div>
+
+                <div class="flex">
+                    <img class="logo" src="assets/ZET_Casino_logo.png" alt="">
+                </div>
+
+                    <div class="main-text flex">
+                      <h1 class='main-text-h1'>Get 125% Bonus  <br>instantly</h1>
+                    </div>
+
+                  <div class="offer flex">
+                    <p class="offer-p">Limited Offer</p>
+                  </div>
+
+                  <div class="count-down flex">
+                    <div class="container-2">
+                        <div class="count">
+                            <div class="day-container">
+                                    <h3 class="day">Time</h3>
+                                    <h3 class="day-text">Day</h3>
+                            </div>
+        
+                            <div class="hour-container">
+                                <h3 class="hour">
+                                    time
+                                </h3>
+                                <h3 class="day-text">Hour</h3>
+                            </div>
+        
+                            <div class="minute-container">
+                                <h3 class="minute">
+                                    time
+                                </h3>
+                                <h3 class="day-text">Minute</h3>
+                            </div>
+
+                            <div class="second-container">
+                              <h3 class="seconds">time</h3>
+                              <h3 class="day-text">Seconds</h3>
+                          </div>
+
+                         
+                        </div>
+                    </div>
+                </div>
+                <script>
+                  const countDown = () =>
+              {
+              const countDate = new Date("January 20 , 2022 00:00:00").getTime();
+              const now = new Date().getTime();
+              const gap=countDate - now; 
+              
+              
+              
+              const second = 1000;
+              const minute = second * 60;
+              const hour = minute * 60;
+              const day = hour * 24;
+              
+              
+              
+              const textDay= Math.floor(gap / day);
+              const textHour = Math.floor((gap % day) / hour);
+              const textMinutes = Math.floor((gap % hour) / minute);
+              const textSeconds = Math.floor((gap % minute) / second);
+              
+              
+               document.querySelector(".day").innerText = textDay;
+               document.querySelector(".hour").innerText = textHour;
+               document.querySelector(".minute").innerText = textMinutes;
+               document.querySelector(".seconds").innerText = textSeconds;
+              
+              }
+              
+              setInterval(countDown,1000)
+              </script>
+              
+
+        <div class="steps">
+                    <div class="step1">
+                      <img src="assets/zetcasino_step-1.png" alt="" width="88px;" height="88px;">
+                      <p class="step-p">Create <br> account</p>
+                    </div>
+
+                    <div class="step2">
+                      <img src="assets/zetcasino_step-2.png" alt=""  width="88px;" height="88px;">
+                      <p class="step-p">Make <br>deposit</p>
+                    </div>
+
+                    <div class="step3">
+                      <img src="assets/zetcasino_step-3.png" alt="" width="88px;" height="88px;">
+                      <p class="step-p">Get <br> bonus</p>
+                    </div>
+                  </div>
+
+                  <div class="main-button flex ">
+                    <a class="button-r" href="">Registration</a>
+                  </div>
+                  <div class="payments flex">
+                    <img src="assets/payment-logos_desktop.svg" alt="">
+                  </div>
+    </section>
+       
+ 
+
+  
+
+  </div>
+
+
+
+  
+
+   
+</body>
+</html>
