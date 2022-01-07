@@ -245,7 +245,7 @@ animation:zoom-in-zoom-out 20s ease-out infinite;
   {
       display: flex;
       text-align: center;
-      justify-content: space-around;
+      justify-content: center;
      
   }
 
