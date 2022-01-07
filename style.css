@@ -265,7 +265,7 @@ animation:zoom-in-zoom-out 20s ease-out infinite;
   }
 
 
-  .day , .hour , .minute , .seconds
+ .day , .hour , .minute , .seconds
 {
 
 font-family: "LCD AT&T Phone Time/Date"; 
@@ -273,7 +273,7 @@ font-size: 40px;
 font-style: normal;
 font-weight: 700;
 line-height: 44px;
-letter-spacing: 0em;
+letter-spacing:5px;
 text-align: center;
 
 }
@@ -359,19 +359,20 @@ margin-top:50px;
 margin-inline:auto;
 }
 
-.second-container , .minute-container , .hour-container
+.second-container , .minute-container , .hour-container , .day-container
 {
   position:relative;
 }
-
 .placeholder
 {
   position: absolute;
   color:#f5f1f15b;
   top:0px;
   z-index: 99;
-  font-size: 40px;
-   font-family: "LCD AT&T Phone Time/Date";
+  font-size:42px;
+  font-family: "LCD AT&T Phone Time/Date";
+  letter-spacing:5px;
+ 
 }
 
 @font-face {font-family: "LCD AT&T Phone Time/Date"; src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot"); src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff") format("woff"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.svg#LCD AT&T Phone Time/Date") format("svg"); }
