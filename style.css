@@ -249,6 +249,15 @@ animation:zoom-in-zoom-out 20s ease-out infinite;
      
   }
 
+  .count-dots
+  {
+    display: flex;
+    margin:0 7px 0 2px;
+    padding-bottom: 30px;
+    font-size:40px;
+    margin-top:-5px;
+  }
+
   .container-2
   {
       width:500px;
