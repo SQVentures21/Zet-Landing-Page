@@ -110,12 +110,42 @@
               const textHour = Math.floor((gap % day) / hour);
               const textMinutes = Math.floor((gap % hour) / minute);
               const textSeconds = Math.floor((gap % minute) / second);
+         
+                    function prependZero(textSeconds) {
+                   if (textSeconds <10)
+                return "0" + textSeconds;
+                 else
+                return textSeconds;
+        }
+
+        function prependZero1(textMinutes) {
+                   if (textMinutes <10)
+                return "0" + textMinutess;
+                 else
+                return textMinutes;
+        }
+
+        function prependZero2(textHour) {
+                   if (textHour <10)
+                return "0" + textHour;
+                 else
+                return textHour;
+        }
+
+        function prependZero3(textDay) {
+                   if (textDay <10)
+                return "0" + textDay;
+                 else
+                return textDay;
+        }
+
+
+
               
-              
-               document.querySelector(".day").innerText = textDay;
-               document.querySelector(".hour").innerText = textHour;
-               document.querySelector(".minute").innerText = textMinutes;
-               document.querySelector(".seconds").innerText = textSeconds;
+               document.querySelector(".day").innerText = prependZero3(textDay);
+               document.querySelector(".hour").innerText = prependZero2(textHour);
+               document.querySelector(".minute").innerText =  prependZero1(textMinutes);
+               document.querySelector(".seconds").innerText = prependZero(textSeconds);
               
               }
               
