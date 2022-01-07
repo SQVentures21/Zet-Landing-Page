@@ -362,3 +362,14 @@ margin-inline:auto;
   }
 }
 
+.placeholder
+{
+  position: absolute;
+  color:#f5f1f15b;
+  top:0px;
+  z-index: 99;
+  font-size: 40px;
+}
+
+
+
