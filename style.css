@@ -82,7 +82,6 @@ animation:zoom-in-zoom-out 20s ease-out infinite;
         position: absolute;
         z-index: 999;
         margin: 0 auto;
-        left: 0;
         right: 0;        
         text-align: center;
         top: 5%; /* Adjust this value to move the positioned div up and down */
@@ -97,7 +96,6 @@ animation:zoom-in-zoom-out 20s ease-out infinite;
     position: absolute;
     z-index: 999;
     margin: 0 auto;
-    left: 0;
     right: 0;        
     text-align: center;
     top: 90%; /* Adjust this value to move the positioned div up and down */
@@ -113,7 +111,7 @@ animation:zoom-in-zoom-out 20s ease-out infinite;
     height: 64px;
     background: #000000;
     position: absolute;
-    width:89%;
+    width:540px;
     overflow: hidden;
   }
   
