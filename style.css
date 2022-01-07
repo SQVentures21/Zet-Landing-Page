@@ -347,7 +347,10 @@ margin-top:50px;
 margin-inline:auto;
 }
 
-
+.second-container , .minute-container , .hour-container
+{
+  position:relative;
+}
 
 .placeholder
 {
