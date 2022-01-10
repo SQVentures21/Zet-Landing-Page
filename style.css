@@ -266,7 +266,6 @@ animation:zoom-in-zoom-out 20s ease-out infinite;
  .day , .hour , .minute , .seconds
 {
 
-font-family: "LCD AT&T Phone Time/Date"; 
 font-size: 40px;
 font-style: normal;
 font-weight: 700;
@@ -368,7 +367,7 @@ margin-inline:auto;
   top:0px;
   z-index: 99;
   font-size:42px;
-  font-family: "LCD AT&T Phone Time/Date";
+
   letter-spacing:5px;
  
 }
